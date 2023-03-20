@@ -35,7 +35,7 @@ from FallenMusic.Helpers import get_readable_time
 @app.on_message(filters.command("بنج"))
 async def ping_fallen(_, message: Message):
     hmm = await message.reply_photo(
-        photo=config.PING_IMG, caption=f"{BOT_NAME} ⚡"
+        photo=config.PING_IMG, caption=f"{BOT_NAME} جاري التشغيل..."
     )
     upt = int(time.time() - StartTime)
     cpu = psutil.cpu_percent(interval=0.5)
